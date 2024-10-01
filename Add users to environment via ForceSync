@@ -1,0 +1,18 @@
+#a great tool to easily add multipl users to an environment, use in conjunction with the bulk download options for an entra group to get the list of Object IDs (provided you have the users allready in an entra group)
+
+# Set the environment name (GUID of the environment)
+$environmentName = "da9a0ac7-a961-e8ba-ab79-88cd294d351b"
+
+# List of Principal Object IDs for the users you want to sync
+$principalObjectIds = @(
+    "fc5b6626-211d-4a62-a69e-f4bf2d27bf15",  # First user Principal Object ID
+    "b5247c17-fc8b-4bcb-93ee-01fa7fd73aa2"   # Second user Principal Object ID
+)
+
+# Loop through each Principal Object ID in the array and run the Add-AdminPowerAppsSyncUser cmdlet
+foreach ($principalObjectId in $principalObjectIds) {
+    Add-AdminPowerAppsSyncUser -EnvironmentName $environmentName -PrincipalObjectId $principalObjectId
+}
+
+# Output a message indicating the sync process is complete
+Write-Output "User sync completed."
