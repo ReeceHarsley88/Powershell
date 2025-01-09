@@ -1,1 +1,4 @@
+for an environment 
 Set-AdminPowerAppEnvironmentCopilotSettings -EnvironmentName <Environment ID> -CanvasAppGalleryFilterCopilotEnabled $false
+for an App 
+Set-PowerAppSettings -AppName 'AppName' -DraftingCopilotEnabled $false
