@@ -1,0 +1,1 @@
+Set-AdminPowerAppEnvironmentCopilotSettings -EnvironmentName <Environment ID> -CanvasAppGalleryFilterCopilotEnabled $false
