@@ -1,8 +1,6 @@
-
+#for an App 
 Set-PowerAppSettings -AppName 'AppName' -CanvasGalleryFilteringCopilotEnabled $false
-
+#for an environment
 Set-AdminPowerAppEnvironmentCopilotSettings -EnvironmentName 69f77db6-41b3-e058-a531-c0272fb8971d -AppDraftingCopilotEnabled $false
-
-
 
 https://learn.microsoft.com/en-us/power-apps/user/well-written-input-text-copilot
